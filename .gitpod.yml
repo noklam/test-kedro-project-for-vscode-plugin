@@ -1,0 +1,12 @@
+image: gitpod/workspace-full:2023-10-13-16-25-39
+
+tasks:
+  - name: test
+    init: |
+      pip install git+https://github.com/kedro-org/kedro.git@noklam/kedro-lsp 
+
+# Kedro logging have weird interaction, the custom branch has disable it.
+
+vscode:
+    extensions:
+        - noklam.noklam-vscode
